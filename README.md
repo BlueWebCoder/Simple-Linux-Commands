@@ -4,22 +4,9 @@
 
 ## Mise à jour de l'OS
 ```
-sudo apt -q update && sudo apt upgrade -y
+sudo apt update && sudo apt upgrade
 ```
 
-## Installation de GO 
-
-
-`wget https://go.dev/dl/go1.20.14.linux-amd64.tar.gz`
-`sudo tar -xvf go1.20.14.linux-amd64.tar.gz `
-`sudo mv go /usr/local`
-`sudo rm go1.20.14.linux-amd64.tar.gz`
-`sudo nano ~/.bashrc`
-
-**Ajoutez** :
-    GOROOT=/usr/local/go
-    GOPATH=$HOME/go
-    PATH=$GOPATH/bin:$GOROOT/bin:$PATH*
     
 ## Installation de GlibC
 
@@ -31,7 +18,7 @@ sudo apt install libc6
 
 ## Vérifier les port d'écoute
 ```
-ss -napult
+ ss -napult
 ```
 
 ## Changer le hostname de la machine
